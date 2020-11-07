@@ -1,0 +1,48 @@
+{
+ "cards": [],
+ "category": "Modules",
+ "charts": [],
+ "creation": "2020-11-07 19:42:36.288368",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Desk Page",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_standard": 1,
+ "label": "Volunteer Management",
+ "modified": "2020-11-07 19:49:41.802302",
+ "modified_by": "Administrator",
+ "module": "Volunteer Platform",
+ "name": "Volunteer Management",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Programs",
+   "link_to": "Program",
+   "type": "DocType"
+  },
+  {
+   "color": "#ffe8cd",
+   "doc_view": "",
+   "format": "{} Scheduled",
+   "label": "Sessions",
+   "link_to": "Session",
+   "stats_filter": "{\"status\": \"Scheduled\"}",
+   "type": "DocType"
+  },
+  {
+   "color": "#ffc4c4",
+   "doc_view": "",
+   "format": "{} Open",
+   "label": "Tickets",
+   "link_to": "Ticket",
+   "stats_filter": "{\"status\": \"Open\"}",
+   "type": "DocType"
+  }
+ ]
+}
