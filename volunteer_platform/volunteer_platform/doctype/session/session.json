@@ -13,9 +13,7 @@
   "recipient",
   "column_break_4",
   "status",
-  "datetime",
-  "section_break_7",
-  "rating"
+  "datetime"
  ],
  "fields": [
   {
@@ -41,11 +39,6 @@
    "options": "Scheduled\nPending\nSkipped\nCompleted"
   },
   {
-   "fieldname": "rating",
-   "fieldtype": "Rating",
-   "label": "Rating"
-  },
-  {
    "fieldname": "datetime",
    "fieldtype": "Datetime",
    "in_list_view": 1,
@@ -64,10 +57,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_7",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "recipient",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -83,7 +72,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-11-07 19:16:28.365540",
+ "modified": "2020-11-07 20:27:35.972396",
  "modified_by": "Administrator",
  "module": "Volunteer Platform",
  "name": "Session",
