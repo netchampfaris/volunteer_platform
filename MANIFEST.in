@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include volunteer_platform *.css
+recursive-include volunteer_platform *.csv
+recursive-include volunteer_platform *.html
+recursive-include volunteer_platform *.ico
+recursive-include volunteer_platform *.js
+recursive-include volunteer_platform *.json
+recursive-include volunteer_platform *.md
+recursive-include volunteer_platform *.png
+recursive-include volunteer_platform *.py
+recursive-include volunteer_platform *.svg
+recursive-include volunteer_platform *.txt
+recursive-exclude volunteer_platform *.pyc
