@@ -6,14 +6,22 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "title",
+  "topic",
   "program",
   "coordinator",
   "volunteer",
-  "recipient",
+  "student",
   "column_break_4",
   "status",
-  "datetime"
+  "datetime",
+  "reminder_section",
+  "remind_day_before",
+  "remind_hour_before",
+  "remind_10min_before",
+  "feedback_section",
+  "rating",
+  "skip_reason",
+  "comment"
  ],
  "fields": [
   {
@@ -57,22 +65,68 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "recipient",
+   "fieldname": "student",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Recipient",
+   "label": "Student",
    "options": "User",
    "reqd": 1
   },
   {
-   "fieldname": "title",
+   "fieldname": "topic",
    "fieldtype": "Data",
-   "label": "Title"
+   "label": "Topic"
+  },
+  {
+   "fieldname": "reminder_section",
+   "fieldtype": "Section Break",
+   "label": "Reminder"
+  },
+  {
+   "fieldname": "feedback_section",
+   "fieldtype": "Section Break",
+   "label": "Feedback"
+  },
+  {
+   "depends_on": "eval:doc.status != 'Skipped'",
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Rating"
+  },
+  {
+   "depends_on": "eval:doc.status == 'Skipped'",
+   "fieldname": "skip_reason",
+   "fieldtype": "Link",
+   "label": "Skip Reason",
+   "options": "Skip Reason"
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Small Text",
+   "label": "Comment"
+  },
+  {
+   "default": "0",
+   "fieldname": "remind_day_before",
+   "fieldtype": "Check",
+   "label": "Day Before"
+  },
+  {
+   "default": "0",
+   "fieldname": "remind_hour_before",
+   "fieldtype": "Check",
+   "label": "Hour Before"
+  },
+  {
+   "default": "0",
+   "fieldname": "remind_10min_before",
+   "fieldtype": "Check",
+   "label": "10min Before"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-11-07 20:27:35.972396",
+ "modified": "2020-11-07 21:20:42.514806",
  "modified_by": "Administrator",
  "module": "Volunteer Platform",
  "name": "Session",
@@ -94,6 +148,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "title",
+ "title_field": "topic",
  "track_changes": 1
 }

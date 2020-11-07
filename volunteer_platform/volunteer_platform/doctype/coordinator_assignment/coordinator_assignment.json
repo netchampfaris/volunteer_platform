@@ -1,54 +1,46 @@
 {
  "actions": [],
- "creation": "2020-11-07 19:21:44.624148",
+ "creation": "2020-11-07 20:50:36.915041",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "session",
-  "rating",
-  "skipped",
-  "skip_reason",
-  "comment"
+  "program",
+  "coordinator",
+  "volunteer"
  ],
  "fields": [
   {
-   "fieldname": "session",
+   "fieldname": "program",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Session",
-   "options": "Session",
+   "label": "Program",
+   "options": "Program",
    "reqd": 1
   },
   {
-   "fieldname": "rating",
-   "fieldtype": "Rating",
-   "label": "Rating"
-  },
-  {
-   "fieldname": "comment",
-   "fieldtype": "Small Text",
-   "label": "Comment"
-  },
-  {
-   "default": "0",
-   "fieldname": "skipped",
-   "fieldtype": "Check",
-   "label": "Skipped"
-  },
-  {
-   "fieldname": "skip_reason",
+   "fieldname": "coordinator",
    "fieldtype": "Link",
-   "label": "Reason for Skipping",
-   "options": "Skip Reason"
+   "in_list_view": 1,
+   "label": "Coordinator",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "volunteer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Volunteer",
+   "options": "User",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-11-07 19:26:18.905171",
+ "modified": "2020-11-07 20:50:45.280687",
  "modified_by": "Administrator",
  "module": "Volunteer Platform",
- "name": "Session Feedback",
+ "name": "Coordinator Assignment",
  "owner": "Administrator",
  "permissions": [
   {
